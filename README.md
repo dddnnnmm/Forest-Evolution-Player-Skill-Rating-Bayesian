@@ -5,6 +5,10 @@ This repository contains a Bayesian Hierarchical Model to estimate the latent sk
 ## 📌 Project Overview
 Evaluating player performance in strategic games often suffers from two challenges: the relative strength of opponents varies per match, and different game mechanics introduce varying levels of stochasticity. This project implements a **Hierarchical Linear Model** using **PyMC** to separate "individual skill" from "game-specific effects," providing a probabilistic ranking of 22 contestants.
 
+## 🔗 Quick Links
+* [**📊 Interactive Analysis Report (HTML)**](https://dddnnnmm.github.io/Forest-Evolution-Player-Skill-Rating-Bayesian/bayesian_skill_model.html)
+* [**📄 Technical Whitepaper (PDF)**](https://github.com/dddnnnmm/Forest-Evolution-Player-Skill-Rating-Bayesian/blob/main/Bayesian_Skill_Analysis_Report.pdf)
+
 ## 📊 Data Strategy & Stewardship
 The dataset was manually curated by transcribing results from 50+ hours of broadcast footage. To ensure statistical robustness, a strict filtering logic was applied:
 * **Game Selection:** Only games with at least two matches were included to allow for the estimation of consistent game-specific effects.
@@ -23,11 +27,10 @@ The dataset was manually curated by transcribing results from 50+ hours of broad
 * **Shrinkage Effect:** The model effectively prevented overestimation from "lucky" single-match wins by regularizing individual estimates toward the population mean.
 ![Skill Estimates](results/skill_plot.png)
 
-
 ## 📂 Repository Structure
-* `/data`: Contains `forest_evo_filtered_data.csv`.
-* `/notebooks`: `bayesian_skill_model.ipynb` (End-to-end analysis and visualization).
-* `Bayesian_Skill_Analysis_Report.pdf`: Analysis Report Summary
+* `Bayesian_Skill_Analysis_Report.pdf`: Comprehensive technical report summarizing methodology and findings.
+* `/data`: Contains `forest_evo_filtered_data.csv` (Manually curated dataset).
+* `/notebook`: Contains `bayesian_skill_model.html` (Exported interactive analysis).
 * `/scripts`: `code.py` (Core PyMC model implementation).
 
 ## 🚀 Future Improvements
