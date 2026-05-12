@@ -27,7 +27,7 @@ The dataset was manually curated by transcribing results from 50+ hours of broad
 ## 📂 Repository Structure
 * `/data`: Contains `forest_evo_filtered_data.csv`.
 * `/notebooks`: `bayesian_skill_model.ipynb` (End-to-end analysis and visualization).
-* `/report`: `Bayesian_Skill_Analysis_Report.pdf` (Comprehensive technical whitepaper).
+* `Bayesian_Skill_Analysis_Report.pdf`: Analysis Report Summary
 * `/scripts`: `code.py` (Core PyMC model implementation).
 
 ## 🚀 Future Improvements
